@@ -33,14 +33,14 @@
   const bookmark = id => state.bookmarks.includes(id);
   const routeLink = (c, label) => `<a href="#${c.id}">${label||escape(c.title)}</a>`;
   const mapPlaces = [
-    {n:'01',name:'圣多利亚',en:"San d’Oria",x:34,y:41,ids:[1,5]},
-    {n:'02',name:'巴斯托克',en:'Bastok',x:28,y:69,ids:[1,8]},
-    {n:'03',name:'温德斯特',en:'Windurst',x:69,y:65,ids:[1,9]},
+    {n:'01',name:'桑多利亚',en:"San d’Oria",x:34,y:41,ids:[1,5]},
+    {n:'02',name:'巴斯图克',en:'Bastok',x:28,y:69,ids:[1,8]},
+    {n:'03',name:'温达斯',en:'Windurst',x:69,y:65,ids:[1,9]},
     {n:'04',name:'朱诺与德尔库夫塔',en:'Jeuno / Delkfutt’s Tower',x:49,y:45,ids:[3,4,9]},
     {n:'05',name:'北方与朦胧之地',en:'The North / Dynamis',x:35,y:14,ids:[5,13]},
     {n:'06',name:'诺格与乌迦雷比',en:'Norg / Uggalepih',x:82,y:84,ids:[6,7]},
     {n:'07',name:'拉巴奥与流沙洞',en:'Rabao / Quicksand Caves',x:14,y:77,ids:[8,9]},
-    {n:'08',name:'吉塔与罗梅芙',en:'Zi’Tah / Ro’Maeve',x:67,y:45,ids:[8,9]}
+    {n:'08',name:'吉·塔与洛·美孚',en:'Zi’Tah / Ro’Maeve',x:67,y:45,ids:[8,9]}
   ];
   function mapFigure(){return `<figure class="atlas-figure"><div class="map-frame"><img src="assets/world-map.png" width="529" height="419" alt="瓦纳迪尔世界地图：Quon与Mindartia两大陆及南方群岛">${mapPlaces.map(p=>`<a class="pin" style="left:${p.x}%;top:${p.y}%" href="#${data.chapters[p.ids[0]].id}" aria-label="${escape(p.name)}：阅读${escape(data.chapters[p.ids[0]].title)}" title="${escape(p.name)}">${p.n}</a>`).join('')}<span class="frame-corner corner-tl" aria-hidden="true"></span><span class="frame-corner corner-tr" aria-hidden="true"></span><span class="frame-corner corner-bl" aria-hidden="true"></span><span class="frame-corner corner-br" aria-hidden="true"></span></div><figcaption><span>VANA’DIEL · 地图上的阅读索引</span><span>编号为篇章示意，非精确地点</span></figcaption></figure>`;}
   function heading(en,title,description=''){return `<header class="page-heading"><span class="eyebrow">${en}</span><h1>${title}</h1>${description?`<p>${description}</p>`:''}</header>`;}
@@ -49,7 +49,7 @@
     const [titleLead,titleDetail]=data.title.split('：');
     const displayTitle=escape(titleLead)+'：<span class="hero-title-subtitle">'+escape(titleDetail).replace('〈最终幻想XI〉','<span class="keep-together">〈最终幻想XI〉</span>').replace('行动责任','<span class="keep-together">行动责任</span>')+'</span>';
     const groups=[{label:'第一辑',num:'I',title:'城市与委托',art:'city',tone:'sage',indices:[0,1,2,3,4,5]},{label:'第二辑',num:'II',title:'记忆与决定',art:'memory',tone:'sand',indices:[6,7,8,9]},{label:'第三辑',num:'III',title:'乐园与异议',art:'gate',tone:'blue',indices:[10,11,12]},{label:'尾声',num:'IV',title:'获救与余责',art:'hourglass',tone:'rose',indices:[13,14]}];
-    main.innerHTML=`<section class="hero"><div class="hero-copy"><span class="eyebrow">A COMMON WORLD / BEFORE PARADISE</span><h1>${displayTitle}</h1><p class="subtitle">本体 · 〈吉拉特的幻影〉 · 原初 Dynamis</p><p class="intro">一座让陌生人来往的城市，一扇许诺完成世界的门。阿伦特的共同世界与行动问题贯穿这些故事：共同生活由谁安排，拒绝怎样得到回答，后果又交给了谁。</p><div class="reading-links"><a class="primary-link" href="#chapter-00">从序幕读起 <span>→</span></a><a class="quiet-link" href="#contents">翻阅全部篇目</a></div></div>${mapFigure()}</section>
+    main.innerHTML=`<section class="hero"><div class="hero-copy"><span class="eyebrow">A COMMON WORLD / BEFORE PARADISE</span><h1>${displayTitle}</h1><p class="subtitle">本体 · 〈吉拉特的幻影〉 · 原初迪纳米斯</p><p class="intro">一座让陌生人来往的城市，一扇许诺完成世界的门。阿伦特的共同世界与行动问题贯穿这些故事：共同生活由谁安排，拒绝怎样得到回答，后果又交给了谁。</p><div class="reading-links"><a class="primary-link" href="#chapter-00">从序幕读起 <span>→</span></a><a class="quiet-link" href="#contents">翻阅全部篇目</a></div></div>${mapFigure()}</section>
       <div class="edition-strip"><span><strong>十五篇 · 正文约 ${(data.han/10000).toFixed(1)} 万字</strong>　另含注释与参考文献</span>${last?`<a href="#${last.id}" data-resume>接着读：${escape(shortTitle(last))} · ${Math.round(state.last.ratio*100)}% →</a>`:'<span>阅读位置自动保存在此浏览器</span>'}</div>
       <div class="section-heading"><h2>本刊篇目</h2><span>CONTENTS / 从此处展开</span></div>
       <div class="home-columns"><div class="journal-list">${groups.map(g=>`<section class="journal-group" data-tone="${g.tone}"><div class="issue-mark"><img class="issue-illustration" src="assets/illustration-${g.art}.svg" width="420" height="150" alt="" aria-hidden="true"><small>${g.label}</small><strong>${g.num}</strong><span>${g.title}</span></div><div class="article-links">${g.indices.map(i=>`<a href="#${data.chapters[i].id}"><span>${escape(data.chapters[i].title)}</span><small>${data.chapters[i].minutes} 分钟</small></a>`).join('')}</div></section>`).join('')}</div>
