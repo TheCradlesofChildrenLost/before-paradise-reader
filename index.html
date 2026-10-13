@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24281f">
+  <meta name="description" content="《在乐园之前：〈最终幻想XI〉的共同世界与行动责任》。以阿伦特的共同世界与行动问题重读本体、《吉拉特的幻影》及原初Dynamis，保留原版十五篇。">
+  <title>在乐园之前：〈最终幻想XI〉的共同世界与行动责任</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23272b22'/%3E%3Cpath d='M32 5L39 25L59 32L39 39L32 59L25 39L5 32L25 25Z' fill='%23c6b581'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ornate.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至正文</a>
+  <div class="reading-desk">
+    <aside class="library-rail" aria-label="阅览室导航">
+      <div class="rail-cap" aria-hidden="true"><img src="assets/reader-crest.svg" width="150" height="180" alt=""></div>
+      <a class="rail-name" href="#home">在乐园之前<small>THE READING ROOM</small></a>
+      <div class="rail-rule" aria-hidden="true"></div>
+      <nav class="top-nav" aria-label="主要导航">
+        <div class="nav-left">
+          <a href="#home" data-nav="home"><span>卷首</span><small aria-hidden="true">FRONT PAGE</small></a>
+          <a href="#contents" data-nav="contents"><span>篇目</span><small aria-hidden="true">CONTENTS</small></a>
+          <a href="#atlas" data-nav="atlas"><span>地图索引</span><small aria-hidden="true">WORLD ATLAS</small></a>
+          <a href="#notes" data-nav="notes"><span>注释</span><small aria-hidden="true">MARGINALIA</small></a>
+          <a href="#bibliography" data-nav="bibliography"><span>参考文献</span><small aria-hidden="true">BIBLIOGRAPHY</small></a>
+        </div>
+        <div class="nav-tools"><button id="search-open" aria-label="搜索全文"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><span>检索</span></button><button id="theme-toggle" aria-label="切换夜间阅读">☾</button></div>
+      </nav>
+      <div class="rail-rule" aria-hidden="true"></div>
+      <div class="rail-colophon"><p>本体 · 吉拉特</p><span>十五篇 · 一段共同的世界</span><a href="#materials">材料与版本说明</a><img src="assets/filigree-divider.svg" alt="" width="150" height="24" aria-hidden="true"><small>独立研究 · 非官方刊物</small></div>
+    </aside>
+  <div class="site-wrap">
+    <div class="page-corners" aria-hidden="true"><img class="page-corner corner-tl" src="assets/filigree-corner.svg" alt=""><img class="page-corner corner-tr" src="assets/filigree-corner.svg" alt=""><img class="page-corner corner-bl" src="assets/filigree-corner.svg" alt=""><img class="page-corner corner-br" src="assets/filigree-corner.svg" alt=""></div>
+    <header class="masthead">
+      <div class="masthead-top"><span>独立游戏研究 · 阅读专刊</span><span>FINAL FANTASY XI · RISE OF THE ZILART</span><span>共同世界 / 行动责任</span></div>
+      <a class="wordmark" href="#home" aria-label="在乐园之前 首页"><span class="mark-compass" aria-hidden="true"><img src="assets/reader-crest.svg" width="58" height="70" alt=""></span><span>在乐园之前<small>Before Paradise</small></span><span class="mark-compass" aria-hidden="true"><img src="assets/reader-crest.svg" width="58" height="70" alt=""></span></a>
+      <div class="masthead-flourish" aria-hidden="true"></div>
+      <div class="masthead-bottom"><span>在传说与日常之间，重新认识一个世界。</span><span class="edition-label">全文阅读 · 十五篇</span></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="site-footer"><div class="footer-title">在乐园之前 <span>Before Paradise</span></div><p>《在乐园之前：〈最终幻想XI〉的共同世界与行动责任》</p><div class="footer-meta"><span>独立研究文章 · 非官方刊物</span><a href="#materials">材料与版本说明</a><a href="在乐园之前_阅读稿.md" download>下载阅读稿 ↓</a><a href="https://www.playonline.com/ff11/guide/development/vt2/16/index.html" target="_blank" rel="noopener noreferrer">装帧参考：Tribune II 第16期 ↗</a></div><p class="rights">地图由用户提供；FINAL FANTASY XI 及相关游戏图像版权属于 SQUARE ENIX。花饰、徽章与栏目线描为本页新绘装饰，不作游戏设定图。<span id="storage-status">阅读位置与书签仅保存在当前浏览器。</span></p></footer>
+  </div>
+  </div>
+  <dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-header"><div><span class="eyebrow">INDEX / 全文检索</span><h2 id="search-title">寻找一处地名，一段往事。</h2></div><button class="close-dialog" data-close="search-dialog" aria-label="关闭搜索">×</button></div><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></svg><input id="search-input" type="search" placeholder="搜索全文，如：朱诺、沙漏、阿伦特" autocomplete="off"></label><p id="search-status" role="status">输入关键词，检索十五篇正文。</p><div id="search-results"></div></dialog>
+  <dialog id="note-dialog" aria-labelledby="note-title"><div class="dialog-header"><div><span class="eyebrow">MARGINALIA / 旁注</span><h2 id="note-title">注释</h2></div><button class="close-dialog" data-close="note-dialog" aria-label="关闭注释，返回阅读">×</button></div><div id="note-content" class="prose note-content"></div><button class="return-reading" data-close="note-dialog">返回正在阅读的位置 ↩</button></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">请启用 JavaScript 阅读分章版，或<a href="在乐园之前_阅读稿.md">下载完整阅读稿</a>。</div></noscript>
+</body>
+</html>

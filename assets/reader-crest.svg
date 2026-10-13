@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="0" y1="0" x2="140" y2="175" gradientUnits="userSpaceOnUse"><stop stop-color="#ead9a6"/><stop offset=".38" stop-color="#ab8d54"/><stop offset=".65" stop-color="#e4d19b"/><stop offset="1" stop-color="#796037"/></linearGradient>
+    <linearGradient id="crystal" x1="65" y1="44" x2="100" y2="119" gradientUnits="userSpaceOnUse"><stop stop-color="#f6eac0"/><stop offset=".52" stop-color="#9b9b77"/><stop offset="1" stop-color="#3e5041"/></linearGradient>
+    <g id="laurel"><path d="M75 157C37 145 18 112 27 73C31 58 39 44 52 35"/><path d="M31 112C16 111 13 100 16 95C28 93 33 102 31 112ZM28 95C16 89 16 77 21 73C32 77 33 86 28 95ZM31 77C22 65 27 55 32 54C41 63 39 70 31 77ZM39 59C33 46 41 37 48 38C53 49 47 56 39 59ZM52 42C50 28 61 22 67 25C68 36 60 40 52 42ZM40 131C24 132 21 123 22 117C34 112 41 121 40 131ZM54 146C40 150 31 142 32 136C44 130 51 139 54 146Z" fill="url(#metal)" fill-opacity=".36"/></g>
+  </defs>
+  <g stroke="url(#metal)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <use href="#laurel"/><use href="#laurel" transform="translate(160 0) scale(-1 1)"/>
+    <circle cx="80" cy="86" r="47"/><circle cx="80" cy="86" r="43" stroke-width=".6"/>
+    <path d="M80 16v16M73 24h14M80 22l4 5-4 5-4-5 4-5ZM80 34l31 50-31 50-31-50 31-50Z"/>
+    <path d="M80 43l22 41-22 41-22-41 22-41Z" fill="url(#crystal)"/><path d="M80 43v82M58 84h44M80 43l-10 41 10 41 10-41-10-41Z" stroke="#e6d6a2" stroke-width=".8"/>
+    <path d="M37 142C52 137 64 139 80 149C96 139 108 137 123 142L119 165C104 161 94 164 80 172C66 164 56 161 41 165L37 142Z" fill="#394839"/>
+    <path d="M80 149v23M43 147c12-3 20 0 30 5M43 153c12-3 20 0 30 5M117 147c-12-3-20 0-30 5M117 153c-12-3-20 0-30 5" stroke-width=".7"/>
+    <path d="M48 174c14-8 21 5 32 4c11 1 18-12 32-4M57 180c11-4 14 4 23 4c9 0 12-8 23-4"/>
+    <path d="M35 86H25M135 86h-10M80 132v8M44 50l-6-6M116 50l6-6" stroke-width=".7"/>
+    <circle cx="80" cy="7" r="2" fill="url(#metal)"/><circle cx="12" cy="86" r="2"/><circle cx="148" cy="86" r="2"/>
+    <path d="M80 0v3M8 86H4M152 86h4" stroke-width=".7"/>
+  </g>
+</svg>

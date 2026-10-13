@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 56" fill="none">
+  <defs><g id="vine" stroke="#7c6846" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 28h190C232 28 237 12 254 15C268 17 267 31 256 33C245 35 244 24 251 22M18 32h172C215 32 225 41 242 39C254 38 260 31 265 27"/>
+    <path d="M198 28C211 20 216 14 213 10C204 9 198 19 198 28ZM221 24C224 12 229 8 237 11C235 20 227 23 221 24ZM204 33C209 43 218 48 224 44C223 36 213 32 204 33ZM246 18C249 9 257 5 264 9C264 15 256 19 246 18Z" fill="#9a855a" fill-opacity=".22"/>
+    <path d="M273 28c-5-12 0-20 7-18c7 3 2 12-4 11M273 28c-5 12 0 20 7 18c7-3 2-12-4-11M11 28l5-5 5 5-5 5-5-5ZM31 28l4-3 4 3-4 3-4-3Z"/>
+    <circle cx="64" cy="30" r="1.4" fill="#7c6846"/><circle cx="156" cy="30" r="1.4" fill="#7c6846"/>
+  </g></defs>
+  <use href="#vine"/><use href="#vine" transform="translate(600 0) scale(-1 1)"/>
+  <g stroke="#7c6846" stroke-width="1.2"><path d="M300 6l14 22-14 22-14-22 14-22ZM300 15l8 13-8 13-8-13 8-13Z"/><path d="M282 28h36M300 3v50" stroke-width=".6"/><circle cx="300" cy="28" r="3" fill="#8a7046"/></g>
+</svg>
