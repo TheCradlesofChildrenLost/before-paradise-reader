@@ -38,7 +38,7 @@
     {n:'03',name:'温达斯',en:'Windurst',x:69,y:65,ids:[1,9]},
     {n:'04',name:'朱诺与德尔库夫塔',en:'Jeuno / Delkfutt’s Tower',x:49,y:45,ids:[3,4,9]},
     {n:'05',name:'北方与朦胧之地',en:'The North / Dynamis',x:35,y:14,ids:[5,13]},
-    {n:'06',name:'诺格与乌迦雷比',en:'Norg / Uggalepih',x:82,y:84,ids:[6,7]},
+    {n:'06',name:'诺格与乌加勒皮',en:'Norg / Uggalepih',x:82,y:84,ids:[6,7]},
     {n:'07',name:'拉巴奥与流沙洞',en:'Rabao / Quicksand Caves',x:14,y:77,ids:[8,9]},
     {n:'08',name:'吉·塔与洛·美孚',en:'Zi’Tah / Ro’Maeve',x:67,y:45,ids:[8,9]}
   ];
